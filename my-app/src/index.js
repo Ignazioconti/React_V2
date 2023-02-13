@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
-import { HelloWord } from "./HelloWord";
-const helloWordElement = <HelloWord />;
+import { App } from "./App";
 const root = document.querySelector("#root");
 
-ReactDOM.render(helloWordElement, root);
+ReactDOM.render(<App />, root);
