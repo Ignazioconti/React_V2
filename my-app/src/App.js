@@ -3,6 +3,7 @@ import { ClickCounter } from "./ClickCounter";
 import { ClickTracker } from "./ClickTracker";
 import { Counter } from "./Counter";
 import { HelloWord } from "./HelloWord";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Welcome } from "./Welcome";
 export class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export class App extends React.Component {
         />
         <ClickCounter />
         <ClickTracker />
+        <InteractiveWelcome />
       </div>
     );
   }
