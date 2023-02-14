@@ -30,6 +30,13 @@ export class Login extends React.Component {
   loginHendler = () => {
     console.log(this.state);
   };
+  resetAllInputs = () => {
+    this.setState({
+      username: "",
+      password: "",
+      remember: false,
+    });
+  };
 
   render() {
     return (
@@ -53,8 +60,14 @@ export class Login extends React.Component {
           checked={this.state.checked}
           onChange={this.inputHandler}
         />
-        <button disabled={this.state.disabled} onClick={this.loginHendler}>
-          SUBMIT
+        <button
+          disabled={!this.state.username || !this.state.password}
+          onClick={() => this.loginHendler(this.state)}
+        >
+          Login
+        </button>
+        <button name="reset" onClick={this.resetAllInputs}>
+          Reset
         </button>
       </div>
     );
