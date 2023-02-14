@@ -2,44 +2,60 @@ import React from "react";
 
 export class Login extends React.Component {
   state = {
-    username: null,
-    password: null,
-    remember: false,
+    name: "",
+    email: "",
+    checked: false,
+    disabled: true,
   };
 
-  handleChangeInput = (event) => {
-    const value = event.target.value;
-    const name = event.target.name;
-    const type = event.target.type;
-    const checked = event.target.checked;
+  inputHandler = (event) => {
+    this.setState(
+      {
+        [event.target.name]:
+          event.target.type === "checkbox"
+            ? event.target.checked
+            : event.target.value,
+      },
+      () => {
+        this.setState({
+          disabled:
+            this.state.name && this.state.email && this.state.checked
+              ? false
+              : true,
+        });
+      }
+    );
+  };
 
-    this.setState({
-      [name]: type === "checkbox" ? checked : value,
-    });
+  loginHendler = () => {
+    console.log(this.state);
   };
 
   render() {
     return (
       <div>
         <input
-          name="username"
-          placeholder="Username..."
-          value={this.state.username}
-          onChange={this.handleChangeInput}
-        ></input>
+          type="text"
+          onChange={this.inputHandler}
+          value={this.state.name}
+          name="name"
+        />
         <input
-          name="password"
-          placeholder="Password..."
-          type="password"
-          value={this.state.password}
-          onChange={this.handleChangeInput}
-        ></input>
+          type="text"
+          onChange={this.inputHandler}
+          value={this.state.email}
+          name="email"
+        />
         <input
-          name="remember"
           type="checkbox"
-          checked={this.state.remember}
-          onChange={this.handleChangeInput}
-        ></input>
+          name="checked"
+          id=""
+          checked={this.state.checked}
+          onChange={this.inputHandler}
+        />
+        <button disabled={this.state.disabled} onClick={this.loginHendler}>
+          SUBMIT
+        </button>
       </div>
     );
   }
