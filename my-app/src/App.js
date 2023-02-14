@@ -5,6 +5,7 @@ import { Counter } from "./Counter";
 import { HelloWord } from "./HelloWord";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Login } from "./Login";
+import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
 export class App extends React.Component {
   render() {
@@ -21,6 +22,7 @@ export class App extends React.Component {
         <ClickTracker />
         <InteractiveWelcome />
         <Login />
+        <UncontrolledLogin />
       </div>
     );
   }
