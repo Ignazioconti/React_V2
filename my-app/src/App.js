@@ -1,6 +1,7 @@
 import React from "react";
 import { ClickCounter } from "./ClickCounter";
 import { ClickTracker } from "./ClickTracker";
+import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { HelloWord } from "./HelloWord";
 import { InteractiveWelcome } from "./InteractiveWelcome";
@@ -25,6 +26,7 @@ export class App extends React.Component {
         <Login />
         <UncontrolledLogin />
         <TodoList />
+        <Container />
       </div>
     );
   }
