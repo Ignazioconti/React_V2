@@ -1,4 +1,5 @@
 import React from "react";
+import { Counter } from "./Counter";
 import { HelloWord } from "./HelloWord";
 import { Welcome } from "./Welcome";
 export class App extends React.Component {
@@ -6,9 +7,8 @@ export class App extends React.Component {
     return (
       <div>
         <HelloWord />
-        <p>
-          <Welcome name="John" renderAge={true} />
-        </p>
+        <Welcome name="John" renderAge={true} />
+        <Counter />
       </div>
     );
   }
