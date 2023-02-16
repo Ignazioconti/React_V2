@@ -25,7 +25,14 @@ export class App extends React.Component {
         <InteractiveWelcome />
         <Login />
         <UncontrolledLogin />
-        <TodoList />
+        <TodoList render={
+                    (items) => {
+                        const [...item] = items
+                        return (
+                            <ul><li>{item}</li></ul>
+                        )
+                    }
+                }/>
         <Container title="Titolo Props" />
       </div>
     );
