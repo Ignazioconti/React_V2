@@ -26,7 +26,7 @@ export class App extends React.Component {
         <Login />
         <UncontrolledLogin />
         <TodoList />
-        <Container title="My prop is a title" />
+        <Container title="Titolo Props" />
       </div>
     );
   }
