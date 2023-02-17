@@ -41,7 +41,11 @@ export class App extends React.Component {
           incrementalAmount={2}
           incrementInterval={2000}
         />
-        <ClickCounter />
+        <ClickCounter
+          onCounterChange={(counter) => {
+            console.log(`the count is ${counter}`);
+          }}
+        />
         <ClickTracker />
         <InteractiveWelcome />
         <Login />
