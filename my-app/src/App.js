@@ -4,10 +4,12 @@ import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { DisplayLanguage } from "./DisplayLanguage";
+import { GitHubUser } from "./GithubUser";
 import { HelloWord } from "./HelloWord";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { LanguageContext } from "./LanguageContext";
 import { Login } from "./Login";
+import { Sum } from "./Sum";
 import { TodoList } from "./TodoList";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
@@ -61,6 +63,8 @@ export class App extends React.Component {
           }}
         />
         <Container title="Titolo Props" />
+        <Sum />
+        <GitHubUser username="Ignazioconti" />
       </div>
     );
   }
