@@ -4,7 +4,8 @@ import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { DisplayLanguage } from "./DisplayLanguage";
-import { GitHubUser } from "./GithubUser";
+import { GitHubUser } from "./GitHubUser";
+import { GitHubUserList } from "./GitHubUserList";
 import { HelloWord } from "./HelloWord";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { LanguageContext } from "./LanguageContext";
@@ -26,7 +27,7 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        <LanguageContext.Provider value={this.state.language}>
+        {/* <LanguageContext.Provider value={this.state.language}>
           <select
             value={this.state.language}
             onChange={this.handleLanguageChange}
@@ -63,8 +64,9 @@ export class App extends React.Component {
           }}
         />
         <Container title="Titolo Props" />
-        <Sum />
+        <Sum /> */}
         <GitHubUser username="Ignazioconti" />
+        <GitHubUserList />
       </div>
     );
   }
