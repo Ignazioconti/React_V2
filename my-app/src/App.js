@@ -16,6 +16,7 @@ import { HookForm } from "./HookForm";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome";
 import { HookCounter } from "./HookCounter";
+import { CarDetails } from "./CarDetails";
 export class App extends React.Component {
   state = {
     language: "en",
@@ -74,6 +75,9 @@ export class App extends React.Component {
         <HookCounter />
         <GitHubUser username="Ignazioconti" />
         <GitHubUserList />
+        <CarDetails
+          initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
+        />
       </div>
     );
   }
