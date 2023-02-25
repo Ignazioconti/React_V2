@@ -3,20 +3,20 @@ import React from "react";
 // import { ClickTracker } from "./ClickTracker";
 // import { Container } from "./Container";
 // import { Counter } from "./Counter";
-// import { DisplayLanguage } from "./DisplayLanguage";
-import { GitHubUser } from "./GitHubUser";
-import { GitHubUserList } from "./GitHubUserList";
+import { DisplayLanguage } from "./DisplayLanguage";
+// import { GitHubUser } from "./GitHubUser";
+// import { GitHubUserList } from "./GitHubUserList";
 // import { HelloWord } from "./HelloWord";
-import { HookForm } from "./HookForm";
+// import { HookForm } from "./HookForm";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
-// import { LanguageContext } from "./LanguageContext";
+import { LanguageContext } from "./LanguageContext";
 // import { Login } from "./Login";
 // import { Sum } from "./Sum";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome";
-import { HookCounter } from "./HookCounter";
-import { CarDetails } from "./CarDetails";
+// import { HookCounter } from "./HookCounter";
+// import { CarDetails } from "./CarDetails";
 export class App extends React.Component {
   state = {
     language: "en",
@@ -30,7 +30,7 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <LanguageContext.Provider value={this.state.language}>
+        <LanguageContext.Provider value={this.state.language}>
           <select
             value={this.state.language}
             onChange={this.handleLanguageChange}
@@ -40,7 +40,7 @@ export class App extends React.Component {
           </select>
           <DisplayLanguage />
         </LanguageContext.Provider>
-        <HelloWord />
+        {/* <HelloWord />
         <Welcome name="John" renderAge={true} />
         <Counter
           initialValue={2}
@@ -71,13 +71,13 @@ export class App extends React.Component {
         <GitHubUser username="Ignazioconti" />
         <GitHubUserList /> */}
 
-        <HookForm />
+        {/* <HookForm />
         <HookCounter />
         <GitHubUser username="Ignazioconti" />
         <GitHubUserList />
         <CarDetails
           initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
-        />
+        /> */}
       </div>
     );
   }
