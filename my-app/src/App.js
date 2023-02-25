@@ -15,7 +15,7 @@ import { LanguageContext } from "./LanguageContext";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome";
-// import { HookCounter } from "./HookCounter";
+import { HookCounter } from "./HookCounter";
 // import { CarDetails } from "./CarDetails";
 export class App extends React.Component {
   state = {
@@ -71,9 +71,9 @@ export class App extends React.Component {
         <GitHubUser username="Ignazioconti" />
         <GitHubUserList /> */}
 
-        {/* <HookForm />
+        {/* <HookForm /> */}
         <HookCounter />
-        <GitHubUser username="Ignazioconti" />
+        {/* <GitHubUser username="Ignazioconti" />
         <GitHubUserList />
         <CarDetails
           initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
