@@ -2,7 +2,7 @@ import React from "react";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
-// import { Counter } from "./Counter";
+import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { GitHubUser } from "./GitHubUser";
 // import { GitHubUserList } from "./GitHubUserList";
@@ -83,7 +83,17 @@ export class App extends React.Component {
         <FilteredList />
         <Container title="Titolo Props">
           <Routes>
-            <Route path="/" element={<Welcome name="" />} />
+            <Route path="/" element={<Welcome name="" renderAge={true} />} />
+            <Route
+              path="counter"
+              element={
+                <Counter
+                  initialValue={2}
+                  incrementAmount={2}
+                  incrementInterval={1000}
+                />
+              }
+            />
           </Routes>
         </Container>
       </div>
