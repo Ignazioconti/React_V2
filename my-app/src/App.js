@@ -19,6 +19,7 @@ import { Welcome } from "./Welcome";
 import { FilteredList } from "./FilteredList";
 // import { CarDetails } from "./CarDetails";
 import { Route, Routes } from "react-router-dom";
+import { ShowGitHubUser } from "./ShowGitHubUser";
 export class App extends React.Component {
   state = {
     language: "en",
@@ -94,6 +95,7 @@ export class App extends React.Component {
                 />
               }
             />
+            <Route path="user:username" element={<ShowGitHubUser />} />
           </Routes>
         </Container>
       </div>
