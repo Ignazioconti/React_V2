@@ -16,7 +16,7 @@ import { GitHubUserList } from "./GitHubUserList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter";
-import { FilteredList } from "./FilteredList";
+// import { FilteredList } from "./FilteredList";
 // import { CarDetails } from "./CarDetails";
 import { Route, Routes, Link } from "react-router-dom";
 import { ShowGitHubUser } from "./ShowGitHubUser";
@@ -81,7 +81,7 @@ export class App extends React.Component {
         <CarDetails
           initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
         /> */}
-        <FilteredList />
+        {/* <FilteredList /> */}
         <Container title="Titolo Props">
           <Routes>
             <Route path="/" element={<Welcome name="" renderAge={true} />} />
@@ -97,6 +97,7 @@ export class App extends React.Component {
             />
 
             <Route path="users" element={<GitHubUserList />} />
+            <Route index element={<p>Add user and select it</p>} />
             <Route path=":username" element={<ShowGitHubUser />} />
 
             <Route
