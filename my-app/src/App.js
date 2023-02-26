@@ -18,7 +18,7 @@ import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter";
 import { FilteredList } from "./FilteredList";
 // import { CarDetails } from "./CarDetails";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import { ShowGitHubUser } from "./ShowGitHubUser";
 export class App extends React.Component {
   state = {
@@ -97,6 +97,9 @@ export class App extends React.Component {
             />
             <Route path="user:username" element={<ShowGitHubUser />} />
           </Routes>
+          <Link to="/">Home</Link>
+          <Link to="counter">Counter</Link>
+          <Link to="user:username">GitHub</Link>
         </Container>
       </div>
     );
