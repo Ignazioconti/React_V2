@@ -96,6 +96,15 @@ export class App extends React.Component {
               }
             />
             <Route path="user:username" element={<ShowGitHubUser />} />
+            <Route
+              path="/"
+              element={
+                <div>
+                  <p>Not Found!!!!</p>
+                  <Link to="/">Go Home </Link>
+                </div>
+              }
+            />
           </Routes>
           <Link to="/">Home</Link>
           <Link to="counter">Counter</Link>
