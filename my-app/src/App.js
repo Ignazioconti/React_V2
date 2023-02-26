@@ -1,7 +1,7 @@
 import React from "react";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
-// import { Container } from "./Container";
+import { Container } from "./Container";
 // import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { GitHubUser } from "./GitHubUser";
@@ -14,10 +14,11 @@ import React from "react";
 // import { Sum } from "./Sum";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
-// import { Welcome } from "./Welcome";
+import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter";
 import { FilteredList } from "./FilteredList";
 // import { CarDetails } from "./CarDetails";
+import { Route, Routes } from "react-router-dom";
 export class App extends React.Component {
   state = {
     language: "en",
@@ -80,6 +81,11 @@ export class App extends React.Component {
           initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
         /> */}
         <FilteredList />
+        <Container title="Titolo Props">
+          <Routes>
+            <Route path="/" element={<Welcome name="" />} />
+          </Routes>
+        </Container>
       </div>
     );
   }
