@@ -5,7 +5,7 @@ import { Container } from "./Container";
 import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { GitHubUser } from "./GitHubUser";
-// import { GitHubUserList } from "./GitHubUserList";
+import { GitHubUserList } from "./GitHubUserList";
 // import { HelloWord } from "./HelloWord";
 // import { HookForm } from "./HookForm";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
@@ -95,7 +95,10 @@ export class App extends React.Component {
                 />
               }
             />
-            <Route path="user:username" element={<ShowGitHubUser />} />
+
+            <Route path="users" element={<GitHubUserList />} />
+            <Route path=":username" element={<ShowGitHubUser />} />
+
             <Route
               path="/"
               element={
