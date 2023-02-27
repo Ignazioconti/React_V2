@@ -1,11 +1,10 @@
 import React from "react";
 // import { ClickCounter } from "./ClickCounter";
-// import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
-import { Counter } from "./Counter";
+// import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
-// import { GitHubUser } from "./GitHubUser";
-import { GitHubUserList } from "./GitHubUserList";
+import { GitHubUser } from "./GitHubUser";
+// import { GitHubUserList } from "./GitHubUserList";
 // import { HelloWord } from "./HelloWord";
 // import { HookForm } from "./HookForm";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
@@ -14,12 +13,12 @@ import { GitHubUserList } from "./GitHubUserList";
 // import { Sum } from "./Sum";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
-import { Welcome } from "./Welcome";
+// import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetails } from "./CarDetails";
-import { Route, Routes, Link } from "react-router-dom";
-import { ShowGitHubUser } from "./ShowGitHubUser";
+// import { Route, Routes, Link } from "react-router-dom";
+// import { ShowGitHubUser } from "./ShowGitHubUser";
 export class App extends React.Component {
   state = {
     language: "en",
@@ -68,11 +67,11 @@ export class App extends React.Component {
               </ul>
             );
           }}
-        />
+        /> */}
         <Container title="Titolo Props" />
-        <Sum />
-        <GitHubUser username="Ignazioconti" />
-        <GitHubUserList /> */}
+        {/* <Sum /> */}
+        <GitHubUser />
+        {/* <GitHubUserList /> */}
 
         {/* <HookForm /> */}
         {/* <HookCounter /> */}
@@ -82,7 +81,7 @@ export class App extends React.Component {
           initialData={{ model: "Lancia Y", year: 2017, color: "White" }}
         /> */}
         {/* <FilteredList /> */}
-        <Container title="Titolo Props">
+        {/* <Container title="Titolo Props">
           <Routes>
             <Route path="/" element={<Welcome name="" renderAge={true} />} />
             <Route
@@ -113,7 +112,7 @@ export class App extends React.Component {
           <Link to="/">Home</Link>
           <Link to="counter">Counter</Link>
           <Link to="user:username">GitHub</Link>
-        </Container>
+        </Container> */}
       </div>
     );
   }
