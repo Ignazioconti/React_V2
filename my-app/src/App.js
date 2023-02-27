@@ -112,7 +112,7 @@ export class App extends React.Component {
           <Link to="/">Home</Link>
           <Link to="counter">Counter</Link>
           <Link to="user:username">GitHub</Link>
-        </Container> */}
+        </Container> */} 
       </div>
     );
   }
