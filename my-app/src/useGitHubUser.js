@@ -38,6 +38,6 @@ export function useGitHubUser() {
   return {
     users: data,
     error,
-    isLoading: !data && !error,
+    isLoading: !data && !error, 
   };
 }
